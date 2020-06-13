@@ -49,7 +49,6 @@ tap 'mas-cli/tap'
   cask 'onyx'
   # Swiss Army Knife for macOS
   brew 'm-cli'
-  cask 'witch'
   cask 'nightowl'
   cask 'itsycal'
 
