@@ -22,10 +22,12 @@ tap 'mas-cli/tap'
 ### System {{{
   ## System Libraries
   brew 'curl'
+  # Mac App Store command line interface
+  brew 'mas' 
   # Display directories as trees (with optional color/HTML output)
   brew 'tree'
   # GNU internationalization (i18n) and localization (l10n) library
-  brew 'gettext'
+  #brew 'gettext'
   # Core application library for C
   brew 'glib'
   # Image manipulation library
@@ -35,7 +37,7 @@ tap 'mas-cli/tap'
   # TIFF library and utilities
   brew 'libtiff'
   # Software library to render fonts
-  brew 'freetype'
+  #brew 'freetype'
   cask 'bartender'
   cask 'moom'
   cask 'clipy'
@@ -43,8 +45,6 @@ tap 'mas-cli/tap'
   cask 'google-photos-backup-and-sync'
 
   ## Mac OS X
-  # Mac App Store command line interface
-  brew 'mas'
   # System Utilities for macOS
   cask 'onyx'
   # Swiss Army Knife for macOS
@@ -96,7 +96,7 @@ tap 'mas-cli/tap'
 
   ## Recorder
   # An open-source screen recorder built with web technology
-  cask 'kap'
+  #cask 'kap'
 ### }}}
 
 ### Network {{{
@@ -111,7 +111,7 @@ tap 'mas-cli/tap'
 
 ### Keyboard & Mouse {{{
   # Network KVM Switch(Mouse and Keyboard Sharing)
-  cask 'synergy'
+  #cask 'synergy'
 
   # A powerful and stable keyboard customizer for macOS
   cask 'karabiner-elements'
@@ -173,7 +173,7 @@ tap 'mas-cli/tap'
   # Remove crazy big files, passwords, credentials and other private data
   brew 'bfg'
   # Text interface for Git repositories
-  brew 'tig'
+  #brew 'tig'
   # A simple terminal UI for git commands
   brew 'lazygit'
   # Extend your GitHub workflow beyond your browser <Paste>
