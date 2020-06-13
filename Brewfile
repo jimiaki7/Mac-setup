@@ -255,6 +255,7 @@ tap 'mas-cli/tap'
   cask 'scrivener'
   cask 'mendeley-reference-manager'
   cask 'logos'
+  cask 'folx'
 ###}}}
 
 ### Font {{{
