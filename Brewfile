@@ -44,6 +44,7 @@ tap 'mas-cli/tap'
   ## Mac OS X
   # Swiss Army Knife for macOS
   brew 'm-cli'
+
   # System Utilities for macOS
   cask 'onyx'
   cask 'google-japanese-ime'
@@ -182,12 +183,9 @@ tap 'mas-cli/tap'
   #brew 'tig'
   # A simple terminal UI for git commands
   brew 'lazygit'
+  brew 'github/gh/gh'
   # Extend your GitHub workflow beyond your browser <Paste>
   cask 'github'
-
-  ## ETC
-  # Clone of cat with syntax highlighting and Git integration
-  brew 'bat'
 ### }}}
 
 ### Code Editor & IDE {{{
@@ -205,6 +203,9 @@ tap 'mas-cli/tap'
   ## Utility
   # Modern replacement for `ls`
   brew 'exa'
+  # Clone of cat with syntax highlighting and Git integration
+  brew 'bat'
+  brew 'fd'
 
   ## Shell: Bash
   # Bourne-Again SHell, a UNIX command interpreter
@@ -232,8 +233,6 @@ tap 'mas-cli/tap'
 ### DevOps {{{
   # Tool for building and managing virtual machine environments
   cask 'vagrant'
-  # Manage your vagrant machines in one place
-  cask 'vagrant-manager'
   cask 'local'
 ### }}}
 
@@ -255,6 +254,7 @@ tap 'mas-cli/tap'
   ## Font Family: ETC
   cask 'homebrew/cask-fonts/font-ubuntu'
   cask 'homebrew/cask-fonts/font-source-code-pro'
+  cask 'font-source-han-code-jp'
   cask 'homebrew/cask-fonts/font-roboto'
   cask 'homebrew/cask-fonts/font-hack'
 ### }}}
