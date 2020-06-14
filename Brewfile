@@ -1,9 +1,11 @@
 # Brewfile
 # Maintained by Jimiaki7 <jimiaki7@gmail.com>
-# Date: 2020/06/13
+# Date: 2020/06/15
 # Location
 cask_args appdir: '/Applications'
-
+# Integrates Homebrew formulae with macOS' `launchctl` manager
+tap 'homebrew/core'
+tap 'homebrew/services'
 tap 'homebrew/bundle'
 # Install and manage GUI macOS applications
 tap 'homebrew/cask'
@@ -11,9 +13,6 @@ tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
 # Alternate versions of Casks
 tap 'homebrew/cask-versions'
-# Integrates Homebrew formulae with macOS' `launchctl` manager
-tap 'homebrew/core'
-tap 'homebrew/services'
 # A CLI tool upgrading every outdated app installed by Homebrew Cask
 # INFO: brew cu
 tap 'buo/cask-upgrade'
@@ -23,7 +22,7 @@ tap 'mas-cli/tap'
   ## System Libraries
   brew 'curl'
   # Mac App Store command line interface
-  brew 'mas' 
+  brew 'mas'
   # Display directories as trees (with optional color/HTML output)
   brew 'tree'
   # GNU internationalization (i18n) and localization (l10n) library
@@ -36,21 +35,26 @@ tap 'mas-cli/tap'
   brew 'libpng'
   # TIFF library and utilities
   brew 'libtiff'
+  # Library for USB device access
+  brew 'libusb'
   # Software library to render fonts
   #brew 'freetype'
-  cask 'bartender'
-  cask 'moom'
-  cask 'clipy'
-  cask 'google-japanese-ime'
-  cask 'google-photos-backup-and-sync'
+
 
   ## Mac OS X
-  # System Utilities for macOS
-  cask 'onyx'
   # Swiss Army Knife for macOS
   brew 'm-cli'
+  # System Utilities for macOS
+  cask 'onyx'
+  cask 'google-japanese-ime'
+  cask 'google-photos-backup-and-sync'
+  cask 'bartender'
+  cask 'moom'
   cask 'nightowl'
   cask 'itsycal'
+  # Boosts your efficiency with hotkeys, keywords, text expansion and more
+  cask 'alfred'
+
 
   ## Mac OS X: Quick Look Plugins
   # An Application for Inspecting macOS Installer Packages
@@ -89,9 +93,14 @@ tap 'mas-cli/tap'
 
 ### Video {{{
   ## Player
-  # VLC media player
-  cask 'vlc'
   cask 'iina'
+  #cask 'vlc'
+
+  ## Downloader
+  # Download YouTube videos from the command-line
+  brew 'youtube-dl'
+  # Play, record, convert, and stream audio and video
+  brew 'ffmpeg'
 
   ## Recorder
   # An open-source screen recorder built with web technology
@@ -101,7 +110,7 @@ tap 'mas-cli/tap'
 ### Network {{{
   ## Proxy & VPN
   # Free software for OpenVPN on OS X
-  cask 'tunnelblick'
+  #cask 'tunnelblick'
 
   ## Utility
   # MAC spoofing GUI for macOS
@@ -130,8 +139,6 @@ tap 'mas-cli/tap'
   cask 'the-unarchiver'
   # Simplified and community-driven man pages
   brew 'tldr'
-  # Boosts your efficiency with hotkeys, keywords, text expansion and more
-  cask 'alfred'
 ### }}}
 
 ### Programming Language {{{
@@ -141,18 +148,18 @@ tap 'mas-cli/tap'
   ## Python
   # Python3
   brew 'python'
-  # Python2
-  brew 'python@2'
   # Python dependency management tool
-  brew 'pipenv'
+  #brew 'pipenv'
 
   ## Java
   # Java Standard Edition Development Kit 12
   # INFO: Need to reboot
   cask 'java'
+
   ## C Family
   # GNU compiler collection
   brew 'gcc'
+
   ## Shellscript
   # Static analysis and lint tool, for (ba)sh scripts
   brew 'shellcheck'
@@ -170,7 +177,7 @@ tap 'mas-cli/tap'
   # Prevents you from committing sensitive information to a git repo
   brew 'git-secrets'
   # Remove crazy big files, passwords, credentials and other private data
-  brew 'bfg'
+  #brew 'bfg'
   # Text interface for Git repositories
   #brew 'tig'
   # A simple terminal UI for git commands
@@ -203,7 +210,7 @@ tap 'mas-cli/tap'
   # Bourne-Again SHell, a UNIX command interpreter
   brew 'bash'
   # Programmable completion for Bash 4.1+
-  brew 'bash-completion@2'
+  #brew 'bash-completion@2'
 
   ## Shell: Zsh
   # UNIX shell (command interpreter)
@@ -211,7 +218,6 @@ tap 'mas-cli/tap'
   brew 'zsh'
   # Fish shell like syntax highlighting for zsh
   brew 'zsh-syntax-highlighting'
-  brew 'zsh-autosuggestion'
   # Tips, tricks, and examples for zsh
   brew 'zsh-lovers'
 #}}}
@@ -231,23 +237,9 @@ tap 'mas-cli/tap'
   cask 'local'
 ### }}}
 
-### QMK {{{
-  tap 'qmk/qmk'
-  # Quantum Mechanical Keyboard (QMK) Firmware
-  brew 'qmk/qmk/qmk'
-  cask 'qmk-toolbox'
-  # Library for USB device access
-  brew 'libusb'
-###}}}
-
 ###{{{ APPS
   cask 'appcleaner'
   cask 'adobe-acrobat-reader'
-  # Play, record, convert, and stream audio and video
-  brew 'ffmpeg'
-  # Download YouTube videos from the command-line
-  brew 'youtube-dl'
-  cask 'zoomus'
   cask 'dropbox'
   cask 'spotify'
   cask 'microsoft-office'
@@ -256,26 +248,12 @@ tap 'mas-cli/tap'
   cask 'mendeley-reference-manager'
   cask 'logos'
   cask 'folx'
+  cask 'zoomus'
 ###}}}
 
 ### Font {{{
-  ## Font Family: Icons
-  # Most popular icon toolkit
-  cask 'homebrew/cask-fonts/font-fontawesome'
-  # Simple and Minimal Line Icons
-  cask 'homebrew/cask-fonts/font-simple-line-icons'
-  # Material Design icons by Google
-  cask 'homebrew/cask-fonts/font-material-icons'
-  # An iconic font made for developers
-  cask 'homebrew/cask-fonts/font-devicons'
-  # WordPress admin icon font
-  cask 'homebrew/cask-fonts/font-dashicons'
-  # The premium icon font for Ionic Framework and web apps everywhere
-  cask 'homebrew/cask-fonts/font-ionicons'
-
   ## Font Family: ETC
   cask 'homebrew/cask-fonts/font-ubuntu'
-  cask 'homebrew/cask-fonts/font-source-han-noto-cjk'
   cask 'homebrew/cask-fonts/font-source-code-pro'
   cask 'homebrew/cask-fonts/font-roboto'
   cask 'homebrew/cask-fonts/font-hack'
