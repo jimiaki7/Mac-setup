@@ -233,6 +233,7 @@ tap 'mas-cli/tap'
   # Tool for building and managing virtual machine environments
   cask 'vagrant'
   cask 'local'
+  cask 'forklift'
 ### }}}
 
 ###{{{ APPS
