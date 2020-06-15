@@ -183,7 +183,6 @@ tap 'mas-cli/tap'
   #brew 'tig'
   # A simple terminal UI for git commands
   brew 'lazygit'
-  brew 'github/gh/gh'
   # Extend your GitHub workflow beyond your browser <Paste>
   cask 'github'
 ### }}}
