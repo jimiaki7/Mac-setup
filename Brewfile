@@ -24,7 +24,7 @@ tap 'mas-cli/tap'
   # Mac App Store command line interface
   brew 'mas'
   # Display directories as trees (with optional color/HTML output)
-  brew 'tree'
+  #brew 'tree'
   # GNU internationalization (i18n) and localization (l10n) library
   #brew 'gettext'
   # Core application library for C
@@ -38,7 +38,7 @@ tap 'mas-cli/tap'
   # Library for USB device access
   brew 'libusb'
   # Software library to render fonts
-  #brew 'freetype'
+  brew 'freetype'
 
 
   ## Mac OS X
@@ -59,7 +59,7 @@ tap 'mas-cli/tap'
 
   ## Mac OS X: Quick Look Plugins
   # An Application for Inspecting macOS Installer Packages
-  cask 'suspicious-package'
+  #cask 'suspicious-package'
   # View plain text files without a file extension
   cask 'qlstephen'
   # Preview source code files with syntax highlighting
@@ -84,18 +84,11 @@ tap 'mas-cli/tap'
   ## Web Browser
   cask 'google-chrome'
   cask 'firefox-developer-edition'
-
-  ## Flash Player for Web Browser
-  # Adobe Flash Player NPAPI (plugin for Safari and Firefox)
-  cask 'flash-npapi'
-  # Adobe Flash Player PPAPI (plugin for Opera and Chromium)
-  cask 'flash-ppapi'
 ### }}}
 
 ### Video {{{
   ## Player
   cask 'iina'
-  #cask 'vlc'
 
   ## Downloader
   # Download YouTube videos from the command-line
@@ -144,7 +137,7 @@ tap 'mas-cli/tap'
 
 ### Programming Language {{{
   ## Go
-  brew 'go'
+  #brew 'go'
 
   ## Python
   # Python3
@@ -183,15 +176,13 @@ tap 'mas-cli/tap'
   #brew 'tig'
   # A simple terminal UI for git commands
   brew 'lazygit'
-  # Extend your GitHub workflow beyond your browser <Paste>
-  cask 'github'
 ### }}}
 
 ### Code Editor & IDE {{{
   ## Editor: Vim
   # Vi 'workalike' with many additional features
   brew 'vim'
-  cask 'atom'
+  cask 'visual-studio-code'
 ### }}}
 
 ### Terminal {{{
@@ -233,7 +224,6 @@ tap 'mas-cli/tap'
   # Tool for building and managing virtual machine environments
   cask 'vagrant'
   cask 'local'
-  cask 'forklift'
 ### }}}
 
 ###{{{ APPS
@@ -252,11 +242,10 @@ tap 'mas-cli/tap'
 
 ### Font {{{
   ## Font Family: ETC
-  cask 'homebrew/cask-fonts/font-ubuntu'
   cask 'homebrew/cask-fonts/font-source-code-pro'
-  cask 'font-source-han-code-jp'
-  cask 'homebrew/cask-fonts/font-roboto'
+  cask 'homebrew/cask-fonts/font-source-han-code-jp'
   cask 'homebrew/cask-fonts/font-hack'
+  cask 'homebrew/cask-fonts/ricty-diminished'
 ### }}}
 
 ### MAS apps {{{
