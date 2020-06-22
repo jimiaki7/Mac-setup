@@ -1,17 +1,17 @@
 # Brewfile
 # Maintained by Jimiaki7 <jimiaki7@gmail.com>
 # Date: 2020/06/15
+
 # Location
 cask_args appdir: '/Applications'
-# Integrates Homebrew formulae with macOS' `launchctl` manager
+
+### TAPs
 tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'homebrew/bundle'
-# Install and manage GUI macOS applications
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
-# Alternate versions of Casks
 tap 'homebrew/cask-versions'
 # A CLI tool upgrading every outdated app installed by Homebrew Cask
 # INFO: brew cu
@@ -24,8 +24,6 @@ tap 'mas-cli/tap'
   # Mac App Store command line interface
   brew 'mas'
   brew 'tmux'
-  # GNU internationalization (i18n) and localization (l10n) library
-  #brew 'gettext'
   # Core application library for C
   brew 'glib'
   # Image manipulation library
@@ -38,6 +36,8 @@ tap 'mas-cli/tap'
   brew 'libusb'
   # Software library to render fonts
   brew 'freetype'
+  # GNU internationalization (i18n) and localization (l10n) library
+  #brew 'gettext'
 
 
   ## Mac OS X
@@ -49,27 +49,23 @@ tap 'mas-cli/tap'
   cask 'google-japanese-ime'
   cask 'google-photos-backup-and-sync'
   cask 'bartender'
-  #cask 'moom'
   cask 'rectangle'
   cask 'nightowl'
   cask 'itsycal'
-  # Boosts your efficiency with hotkeys, keywords, text expansion and more
   cask 'alfred'
+  #cask 'moom'
 
 
   ## Mac OS X: Quick Look Plugins
-  # An Application for Inspecting macOS Installer Packages
-  #cask 'suspicious-package'
-  # View plain text files without a file extension
   cask 'qlstephen'
-  # Preview source code files with syntax highlighting
-  cask 'qlcolorcode'
-  # Preview JSON files
-  cask 'quicklook-json'
-  # Display image size and resolution
   cask 'qlimagesize'
   cask 'qlmarkdown'
+  cask 'qlcolorcode'
   cask 'qlvideo'
+  cask 'quicklook-json'
+  cask 'quicklook-csv'
+  # An Application for Inspecting macOS Installer Packages
+  #cask 'suspicious-package'
 
   ## Monitoring
   # Fast, highly customisable system info script
@@ -80,11 +76,13 @@ tap 'mas-cli/tap'
   brew 'speedtest-cli'
 ### }}}
 
+
 ### Web {{{
   ## Web Browser
   cask 'google-chrome'
   #cask 'firefox-developer-edition'
 ### }}}
+
 
 ### Video {{{
   ## Player
@@ -101,6 +99,7 @@ tap 'mas-cli/tap'
   #cask 'kap'
 ### }}}
 
+
 ### Network {{{
   ## Proxy & VPN
   # Free software for OpenVPN on OS X
@@ -110,6 +109,7 @@ tap 'mas-cli/tap'
   # MAC spoofing GUI for macOS
   cask 'linkliar'
 ### }}}
+
 
 ### Keyboard & Mouse {{{
   # Network KVM Switch(Mouse and Keyboard Sharing)
@@ -122,6 +122,7 @@ tap 'mas-cli/tap'
   # A simple utility application to trigger haptic feedback when tapping Touch Bar
   #cask 'haptickey'
 ### }}}
+
 
 ### Utility {{{
   ## Compress/Uncompress
@@ -159,6 +160,7 @@ tap 'mas-cli/tap'
   # Powerful, clean, object-oriented scripting language
   brew 'ruby'
 
+
 ### VCS {{{
   ## Git & GitHub
   # Distributed revision control system
@@ -167,13 +169,14 @@ tap 'mas-cli/tap'
   brew 'git-extras'
   # Prevents you from committing sensitive information to a git repo
   brew 'git-secrets'
+  # A simple terminal UI for git commands
+  brew 'lazygit'
   # Remove crazy big files, passwords, credentials and other private data
   #brew 'bfg'
   # Text interface for Git repositories
   #brew 'tig'
-  # A simple terminal UI for git commands
-  brew 'lazygit'
 ### }}}
+
 
 ### Code Editor & IDE {{{
   ## Editor: Vim
@@ -232,6 +235,7 @@ tap 'mas-cli/tap'
   cask 'logos'
   cask 'folx'
   cask 'zoomus'
+  cask 'lastpass' 
 ###}}}
 
 ### Font {{{
