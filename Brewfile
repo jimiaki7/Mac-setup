@@ -23,8 +23,7 @@ tap 'mas-cli/tap'
   brew 'curl'
   # Mac App Store command line interface
   brew 'mas'
-  # Display directories as trees (with optional color/HTML output)
-  #brew 'tree'
+  brew 'tmux'
   # GNU internationalization (i18n) and localization (l10n) library
   #brew 'gettext'
   # Core application library for C
@@ -84,7 +83,7 @@ tap 'mas-cli/tap'
 ### Web {{{
   ## Web Browser
   cask 'google-chrome'
-  cask 'firefox-developer-edition'
+  #cask 'firefox-developer-edition'
 ### }}}
 
 ### Video {{{
@@ -126,9 +125,6 @@ tap 'mas-cli/tap'
 
 ### Utility {{{
   ## Compress/Uncompress
-  # 7-Zip (high compression file archiver) implementation
-  brew 'p7zip'
-  cask 'betterzip'
   # General-purpose data compression with high compression ratio
   brew 'xz'
   cask 'the-unarchiver'
@@ -201,8 +197,6 @@ tap 'mas-cli/tap'
   ## Shell: Bash
   # Bourne-Again SHell, a UNIX command interpreter
   brew 'bash'
-  # Programmable completion for Bash 4.1+
-  #brew 'bash-completion@2'
 
   ## Shell: Zsh
   # UNIX shell (command interpreter)
@@ -229,7 +223,6 @@ tap 'mas-cli/tap'
 
 ###{{{ APPS
   cask 'appcleaner'
-  cask 'adobe-acrobat-reader'
   cask 'dropbox'
   cask 'spotify'
   cask 'microsoft-office'
@@ -246,7 +239,7 @@ tap 'mas-cli/tap'
   cask 'homebrew/cask-fonts/font-source-code-pro'
   cask 'homebrew/cask-fonts/font-source-han-code-jp'
   cask 'homebrew/cask-fonts/font-hack'
-  cask 'homebrew/cask-fonts/ricty-diminished'
+  cask 'homebrew/cask-fonts/font-ricty-diminished'
 ### }}}
 
 ### MAS apps {{{
